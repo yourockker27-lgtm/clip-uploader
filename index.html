@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Personal Clip Uploader</title>
+<style>
+  body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}
+  h1{margin-bottom:0} h2{margin-top:2em;border-bottom:1px solid #ddd;padding-bottom:4px}
+  nav a{margin-right:14px} .note{background:#f5f5f5;padding:10px 14px;border-radius:6px}
+</style>
+</head>
+<body>
+<h1>Personal Clip Uploader</h1>
+<p>A private, single-user tool that uploads my own videos to my own YouTube channel.</p>
+<nav><a href="#about">About</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Service</a><a href="#contact">Contact</a></nav>
+
+<p class="note"><strong>Personal Clip Uploader uses YouTube API Services.</strong>
+By using this tool you are bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+Google's privacy practices are described in the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2 id="about">About</h2>
+<p>Personal Clip Uploader is a small command-line tool written and operated by one person (the channel owner).
+It is not distributed, sold or offered to other users. It uses the YouTube Data API to:</p>
+<ul>
+  <li>upload my own finished videos to my own channel (<code>videos.insert</code>) with title, description, AI-content label and a scheduled publish time;</li>
+  <li>set a thumbnail on my own video (<code>thumbnails.set</code>);</li>
+  <li>create and list my own playlists and add my own videos to them (<code>playlists.list</code>, <code>playlists.insert</code>, <code>playlistItems.insert</code>).</li>
+</ul>
+<p>Expected volume: about one upload per day, well inside the default quota.</p>
+
+<h2 id="privacy">Privacy Policy</h2>
+<p><strong>Who uses it:</strong> only the owner of the YouTube channel. There are no other users and no accounts on this website.</p>
+<p><strong>Data accessed:</strong> through Google OAuth 2.0 the tool receives permission to manage the owner's own YouTube account (scope <code>https://www.googleapis.com/auth/youtube</code>). It only sends the owner's own videos, metadata, thumbnails and playlist changes to YouTube. It does not read, collect, analyse or store data about other YouTube users, channels, comments or videos.</p>
+<p><strong>Data stored:</strong> an OAuth refresh token and the OAuth client credentials are stored in local files on the owner's own computer. Nothing is stored on a server and nothing is shared with, sold to or disclosed to any third party.</p>
+<p><strong>Retention and deletion:</strong> the stored token can be deleted at any time by deleting the local token file. Access can also be revoked at any time at
+<a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>
+(Google Account &rarr; Security &rarr; Third-party access). Revoking access also invalidates the token. YouTube API data that the tool handles is only the owner's own data and is not retained beyond the token above.</p>
+<p><strong>Cookies / analytics:</strong> this web page does not use cookies, trackers or analytics.</p>
+<p><strong>Google API Services User Data Policy:</strong> the tool's use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p><strong>Changes:</strong> any change to this policy will be posted on this page.</p>
+
+<h2 id="terms">Terms of Service</h2>
+<p>1. This tool is a personal, private tool provided without warranty, for use by its owner only; it is not offered to the public.</p>
+<p>2. Use of YouTube features through this tool is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a>.</p>
+<p>3. The owner uploads only content they own or have the rights to, discloses AI-generated or altered content using YouTube's altered/synthetic content setting, and complies with YouTube's Community Guidelines and policies.</p>
+<p>4. The owner may stop using the tool and revoke its access at any time (see Privacy Policy).</p>
+
+<h2 id="contact">Contact</h2>
+<p>[CONTACT EMAIL]</p>
+</body>
+</html>
