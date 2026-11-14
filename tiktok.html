@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clip Uploader for TikTok</title>
+<style>
+  body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}
+  h1{margin-bottom:0} h2{margin-top:2em;border-bottom:1px solid #ddd;padding-bottom:4px}
+  nav a{margin-right:14px} .note{background:#f5f5f5;padding:10px 14px;border-radius:6px}
+</style>
+</head>
+<body>
+<h1>Clip Uploader for TikTok</h1>
+<p>A private, single-user desktop tool that posts my own finished animated short videos to my own TikTok account.</p>
+<nav><a href="#about">About</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Service</a><a href="#contact">Contact</a></nav>
+
+<p class="note">This tool uses TikTok Login Kit and the TikTok Content Posting API. Use of TikTok through this tool is subject to the
+<a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a> and the
+<a href="https://www.tiktok.com/community-guidelines">TikTok Community Guidelines</a>.</p>
+
+<h2 id="about">About</h2>
+<p>Clip Uploader is a small command-line tool written and operated by one person, the owner of the TikTok account. It is not distributed, sold or offered to other users. It:</p>
+<ul>
+  <li>signs in to the owner's own TikTok account with Login Kit (scopes <code>user.info.basic</code>, <code>video.publish</code>);</li>
+  <li>reads the creator info (username, allowed privacy levels, maximum video length) before every post, as the Content Posting API requires;</li>
+  <li>uploads one finished video file made by the owner and posts it with a caption, the chosen privacy level, a cover frame and the AI-generated content label;</li>
+  <li>checks the post status until TikTok has processed it.</li>
+</ul>
+<p>The owner reviews every video and caption before posting and starts each post by hand. The tool never posts on behalf of anyone else.</p>
+
+<h2 id="privacy">Privacy Policy</h2>
+<p><strong>Who uses it:</strong> only the owner of the TikTok account. There are no other users and no accounts on this website.</p>
+<p><strong>Data accessed:</strong> the owner's own basic profile (open id, username, display name) and the creator posting info, used only to post the owner's own videos. The tool does not read, collect or analyse data about other TikTok users, videos or comments.</p>
+<p><strong>Data stored:</strong> the access and refresh tokens and the app credentials are stored in local files on the owner's own computer. Nothing is stored on a server and nothing is shared with, sold to or disclosed to any third party.</p>
+<p><strong>Retention and deletion:</strong> the tokens can be deleted at any time by deleting the local token file. Access can also be removed at any time in the TikTok app: Settings and privacy &rarr; Security &rarr; Manage app permissions.</p>
+<p><strong>Cookies / analytics:</strong> this web page does not use cookies, trackers or analytics.</p>
+<p><strong>Changes:</strong> any change to this policy will be posted on this page.</p>
+
+<h2 id="terms">Terms of Service</h2>
+<p>1. This tool is a personal, private tool provided without warranty, for use by its owner only; it is not offered to the public.</p>
+<p>2. Use of TikTok through this tool is subject to the TikTok Terms of Service, Community Guidelines and the TikTok Developer Terms of Service.</p>
+<p>3. The owner posts only content they made or have the rights to, and marks AI-generated content with TikTok's AI-generated content label.</p>
+<p>4. The owner may stop using the tool and remove its access at any time (see Privacy Policy).</p>
+
+<h2 id="contact">Contact</h2>
+<p>Email: you.rock.ker27@gmail.com</p>
+</body>
+</html>
